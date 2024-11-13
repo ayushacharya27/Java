@@ -6,6 +6,7 @@ Now to Read the Values we use the the line
 `try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("savings.ser"))) {
 SavingsData loadedData = (SavingsData) ois.readObject();
 System.out.println(loadedData.category);} 
+
 catch (IOException | ClassNotFoundException e) {
 e.printStackTrace();
 }`
