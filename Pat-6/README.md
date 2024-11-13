@@ -21,13 +21,14 @@ This document provides an overview of key classes used for file handling in Java
 **Purpose**
 - Here we use it with a combination of `FileOutputStream` and `FileInputStream`
 - `DataInputStream` and `DataOutputStream` allow reading and writing primitive data types (int, double, boolean, etc.) in a binary format. These streams are useful for storing structured data that includes numbers and other primitive types and is meant to be read by a Java program.
-
-
+- used when there is no array type of input is given , it only works when the input is given in terms of single single input.
+- It contains functions as `writeUTF` and `writeDouble` and etc etc.
 ## 4. BufferedInputStream & BufferedOutputStream
 
 **Purpose**
 - Same this class we use with a combination of  `FileOutputStream` and `FileInputStream`
 - BufferedInputStream and BufferedOutputStream add buffering to InputStream and OutputStream. Buffering improves performance by reducing the number of I/O operations. Data is read or written in chunks, reducing the time spent on each individual operation.
+- It is used when we get the inputs  in a Array format and we use this with the additional functions.
 
 ## 5. PrintStream
 
@@ -39,6 +40,7 @@ This document provides an overview of key classes used for file handling in Java
 
 **Purpose**
 -Prints formatted text to files, automatically handling character encoding and offering print() and println() methods. Useful for text-based output with formatted data.
+- It is used when we get the inputs to just write and nothing else to do with it , it contains functions like `println` and `printf` and so on.
 
 
 
