@@ -3,11 +3,8 @@
 
 Now to Read the Values we use the the line
 
-`try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("savings.ser"))) {
-SavingsData loadedData = (SavingsData) ois.readObject();
-System.out.println(loadedData.category);} 
-
-catch (IOException | ClassNotFoundException e) {
-e.printStackTrace();
-}`
+`ObjectInputStream ois = new ObjectInputStream(new FileInputStream("savings.ser"))` Include in the try and catch function
+`SavingsData loadedData = (SavingsData) ois.readObject();` It is used to get the data from the Object 
+`System.out.println(loadedData.category);` Then Print it using the values You want
+Same for Output just use `ois.writeObject("Any Object");`
         
